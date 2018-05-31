@@ -1,4 +1,4 @@
-package org.grails.plugin.scaffolding.angular.registry.input
+package org.grails.plugin.scaffolding.vuetify.registry.input
 
 import grails.util.GrailsNameUtils
 import org.grails.scaffolding.model.property.DomainProperty
@@ -7,7 +7,7 @@ import org.grails.scaffolding.registry.input.FileInputRenderer
 /**
  * Created by Jim on 5/24/2016.
  */
-class AngularFileInputRenderer extends FileInputRenderer {
+class VuetifyFileInputRenderer extends FileInputRenderer {
 
     protected String buildPropertyPath(DomainProperty property) {
         StringBuilder sb = new StringBuilder()

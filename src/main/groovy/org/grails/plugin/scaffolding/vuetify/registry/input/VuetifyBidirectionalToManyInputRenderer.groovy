@@ -1,4 +1,4 @@
-package org.grails.plugin.scaffolding.angular.registry.input
+package org.grails.plugin.scaffolding.vuetify.registry.input
 
 import grails.util.GrailsNameUtils
 import org.grails.datastore.mapping.model.types.Association
@@ -8,10 +8,10 @@ import org.grails.scaffolding.registry.input.BidirectionalToManyInputRenderer
 /**
  * Created by Jim on 5/25/2016.
  */
-class AngularBidirectionalToManyInputRenderer extends BidirectionalToManyInputRenderer {
+class VuetifyBidirectionalToManyInputRenderer extends BidirectionalToManyInputRenderer {
 
 
-    AngularBidirectionalToManyInputRenderer() {
+    VuetifyBidirectionalToManyInputRenderer() {
         super(null)
     }
 

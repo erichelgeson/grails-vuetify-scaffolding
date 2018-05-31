@@ -1,8 +1,8 @@
-package org.grails.plugin.scaffolding.angular.template
+package org.grails.plugin.scaffolding.vuetify.template
 
 import grails.codegen.model.Model
 
-interface AngularModuleEditor {
+interface VuetifyModuleEditor {
 
     boolean addModuleImport(File module, Model model)
 

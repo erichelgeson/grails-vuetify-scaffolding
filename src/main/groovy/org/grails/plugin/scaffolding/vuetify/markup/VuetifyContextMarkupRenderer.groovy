@@ -1,4 +1,4 @@
-package org.grails.plugin.scaffolding.angular.markup
+package org.grails.plugin.scaffolding.vuetify.markup
 
 import org.grails.datastore.mapping.model.PersistentEntity
 import org.grails.scaffolding.markup.ContextMarkupRendererImpl
@@ -7,7 +7,7 @@ import org.grails.scaffolding.model.property.DomainProperty
 /**
  * Created by jameskleeh on 2/21/17.
  */
-class AngularContextMarkupRenderer extends ContextMarkupRendererImpl {
+class VuetifyContextMarkupRenderer extends ContextMarkupRendererImpl {
 
     @Override
     Closure listOutputContext(PersistentEntity domainClass, List<DomainProperty> properties, Closure content) {

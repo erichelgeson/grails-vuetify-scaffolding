@@ -1,16 +1,17 @@
-package org.grails.plugin.scaffolding.angular.template
+package org.grails.plugin.scaffolding.vuetify.template
 
 import grails.codegen.model.Model
 import groovy.json.JsonException
 import groovy.json.JsonOutput
 import groovy.json.JsonSlurper
 import groovy.util.logging.Slf4j
+import org.grails.plugin.scaffolding.vuetify.template.VuetifyModuleEditor
 
 import java.util.regex.Matcher
 import java.util.regex.Pattern
 
 @Slf4j
-class AngularModuleEditorImpl implements AngularModuleEditor {
+class VuetifyModuleEditorImpl implements VuetifyModuleEditor {
 
     @Override
     boolean addModuleImport(File module, Model model) {

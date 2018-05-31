@@ -1,4 +1,4 @@
-package org.grails.plugin.scaffolding.angular.registry.input
+package org.grails.plugin.scaffolding.vuetify.registry.input
 
 import org.grails.scaffolding.model.property.DomainProperty
 import org.grails.scaffolding.registry.input.DateInputRenderer
@@ -6,7 +6,7 @@ import org.grails.scaffolding.registry.input.DateInputRenderer
 /**
  * Created by jameskleeh on 3/20/17.
  */
-class AngularDateInputRenderer extends DateInputRenderer {
+class VuetifyDateInputRenderer extends DateInputRenderer {
 
     @Override
     Closure renderInput(Map defaultAttributes, DomainProperty property) {

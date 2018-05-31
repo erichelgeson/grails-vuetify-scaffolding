@@ -1,4 +1,4 @@
-package org.grails.plugin.scaffolding.angular.registry.output
+package org.grails.plugin.scaffolding.vuetify.registry.output
 
 import grails.util.GrailsNameUtils
 import org.grails.scaffolding.model.property.DomainProperty

@@ -1,10 +1,10 @@
 package org.grails.plugin.scaffolding.vuetify
 
 import grails.plugins.Plugin
-import org.grails.plugin.scaffolding.angular.markup.AngularContextMarkupRenderer
-import org.grails.plugin.scaffolding.angular.markup.AngularPropertyMarkupRenderer
-import org.grails.plugin.scaffolding.angular.registry.AngularDomainRendererRegisterer
-import org.grails.plugin.scaffolding.angular.template.AngularModuleEditorImpl
+import org.grails.plugin.scaffolding.vuetify.markup.VuetifyContextMarkupRenderer
+import org.grails.plugin.scaffolding.vuetify.markup.VuetifyPropertyMarkupRenderer
+import org.grails.plugin.scaffolding.vuetify.registry.VuetifyDomainRendererRegisterer
+import org.grails.plugin.scaffolding.vuetify.template.VuetifyModuleEditorImpl
 import org.grails.scaffolding.ScaffoldingBeanConfiguration
 
 class VuetifyScaffoldingGrailsPlugin extends Plugin {
@@ -29,12 +29,12 @@ This plugin provides the ability to generate an Vuetify CRUD components based on
     Closure doWithSpring() {{ ->
         scaffoldingCoreConfig(ScaffoldingBeanConfiguration)
 
-        propertyMarkupRenderer(AngularPropertyMarkupRenderer)
+        propertyMarkupRenderer(VuetifyPropertyMarkupRenderer)
 
-        contextMarkupRenderer(AngularContextMarkupRenderer)
+        contextMarkupRenderer(VuetifyContextMarkupRenderer)
 
-        angularModuleEditor(AngularModuleEditorImpl)
+        angularModuleEditor(VuetifyModuleEditorImpl)
 
-        angularDomainRendererRegisterer(AngularDomainRendererRegisterer)
+        angularDomainRendererRegisterer(VuetifyDomainRendererRegisterer)
     }}
 }

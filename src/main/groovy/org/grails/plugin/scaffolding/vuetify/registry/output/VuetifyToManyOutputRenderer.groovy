@@ -1,4 +1,4 @@
-package org.grails.plugin.scaffolding.angular.registry.output
+package org.grails.plugin.scaffolding.vuetify.registry.output
 
 import grails.util.GrailsNameUtils
 import org.grails.datastore.mapping.model.types.ToMany
@@ -8,7 +8,7 @@ import org.grails.scaffolding.registry.DomainOutputRenderer
 /**
  * Created by Jim on 5/25/2016.
  */
-class AngularToManyOutputRenderer implements DomainOutputRenderer, PropertyHelper {
+class VuetifyToManyOutputRenderer implements DomainOutputRenderer, PropertyHelper {
 
     @Override
     Closure renderListOutput(DomainProperty property) {

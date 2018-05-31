@@ -1,4 +1,4 @@
-package angular.scaffolding
+package vuetify.scaffolding
 
 import grails.codegen.model.Model
 import grails.dev.commands.GrailsApplicationCommand
@@ -11,7 +11,7 @@ import org.grails.datastore.mapping.model.PersistentProperty
 import org.grails.datastore.mapping.model.types.Association
 import org.grails.datastore.mapping.model.types.ManyToOne
 import org.grails.datastore.mapping.model.types.ToMany
-import org.grails.plugin.scaffolding.angular.template.AngularModuleEditor
+import org.grails.plugin.scaffolding.vuetify.template.*
 import org.grails.scaffolding.markup.DomainMarkupRenderer
 import org.grails.scaffolding.model.DomainModelService
 import org.grails.scaffolding.model.property.DomainProperty
@@ -23,7 +23,7 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.beans.factory.annotation.Qualifier
 import org.springframework.beans.factory.annotation.Value
 
-class NgGenerateAllCommand implements GrailsApplicationCommand {
+class VuetifyGenerateAllCommand implements GrailsApplicationCommand {
 
     boolean skipBootstrap = true
 
@@ -37,16 +37,13 @@ class NgGenerateAllCommand implements GrailsApplicationCommand {
     DomainModelService domainModelService
     DomainMarkupRenderer domainMarkupRenderer
     UrlMappings grailsUrlMappingsHolder
-    AngularModuleEditor angularModuleEditor
+    VuetifyModuleEditor angularModuleEditor
 
 
     private PersistentEntity domainClass
 
     @Value('${grails.codegen.angular.baseDir:../client/src/app}')
     String baseDir
-
-    @Value('${grails.codegen.angular.bootstrapModule:app.module.ts}')
-    String bootstrapModule
 
     boolean handle() {
 

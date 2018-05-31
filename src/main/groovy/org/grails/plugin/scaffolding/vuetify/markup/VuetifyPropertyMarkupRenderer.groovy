@@ -1,10 +1,10 @@
-package org.grails.plugin.scaffolding.angular.markup
+package org.grails.plugin.scaffolding.vuetify.markup
 
 import grails.util.GrailsNameUtils
 import org.grails.scaffolding.markup.PropertyMarkupRendererImpl
 import org.grails.scaffolding.model.property.DomainProperty
 
-class AngularPropertyMarkupRenderer extends PropertyMarkupRendererImpl {
+class VuetifyPropertyMarkupRenderer extends PropertyMarkupRendererImpl {
 
     @Override
     Map getStandardAttributes(DomainProperty property) {
