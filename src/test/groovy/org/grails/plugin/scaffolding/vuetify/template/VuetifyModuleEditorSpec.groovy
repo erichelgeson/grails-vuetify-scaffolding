@@ -1,4 +1,4 @@
-package org.grails.plugin.scaffolding.angular.template
+package org.grails.plugin.scaffolding.vuetify.template
 
 import grails.codegen.model.Model
 import grails.codegen.model.ModelBuilder
@@ -6,8 +6,8 @@ import spock.lang.Shared
 import spock.lang.Specification
 import spock.lang.Subject
 
-@Subject(AngularModuleEditorImpl)
-class AngularModuleEditorSpec extends Specification {
+@Subject(VuetifyModuleEditorImpl)
+class VuetifyModuleEditorSpec extends Specification {
 
     @Shared
     File file

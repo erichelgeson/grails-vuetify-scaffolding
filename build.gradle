@@ -12,10 +12,9 @@ plugins {
     id 'org.asciidoctor.convert' version '1.5.3'
 }
 
-version "2.0.1.BUILD-SNAPSHOT"
+version "1.0.0.BUILD-SNAPSHOT"
 group "org.grails.plugins"
 
-apply plugin: "eclipse"
 apply plugin: "idea"
 apply plugin: "org.grails.grails-plugin"
 apply plugin: "org.grails.grails-plugin-publish"
@@ -49,7 +48,7 @@ dependencies {
     compile "org.grails:scaffolding-core:$scaffoldingCoreVersion"
     profile "org.grails.profiles:plugin"
     testCompile "org.grails:grails-plugin-testing"
-    documentation "org.codehaus.groovy:groovy-all:2.4.6"
+    documentation "org.codehaus.groovy:groovy-all:2.4.15"
 }
 
 bootRun {
@@ -60,13 +59,13 @@ bootRepackage.enabled = false
 
 grailsPublish {
     userOrg = "grails"
-    githubSlug = 'grails-plugins/grails-angular-scaffolding'
+    githubSlug = 'grails-plugins/grails-vuetify-scaffolding'
     license {
         name = 'Apache-2.0'
     }
-    title = "Angular Scaffolding Plugin"
-    desc = "Provides scaffolding for Angular applications"
-    developers = [jameskleeh: "James Kleeh"]
+    title = "Vuetify Scaffolding Plugin"
+    desc = "Provides scaffolding for Vuetify components"
+    developers = [erichelgeson: "Eric Helgeson"]
 }
 
 asciidoctor {

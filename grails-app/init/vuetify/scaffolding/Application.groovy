@@ -1,4 +1,4 @@
-package angular.scaffolding
+package vuetify.scaffolding
 
 import grails.boot.GrailsApp
 import grails.boot.config.GrailsAutoConfiguration
